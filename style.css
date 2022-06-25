@@ -4,9 +4,12 @@
     margin:0;
     padding: 0; 
 }
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
 .sidebar{
     position: absolute;
-    background-color: grey;
+    background-color: rgb(31, 171, 167);
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
     transition: transform 0.3s ease-in;
@@ -14,14 +17,87 @@
 .sidebar nav{
     padding: 45px;   
 }
-.sidebar nav li{
+/* .sidebar nav li{
     list-style: none;
     font-size: 30px;
     padding: 33px 0;
-}
+} */
 .sidebar nav li a{
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: black; 
+ }
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+nav {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 33px 0;
+    
+}
+
+nav  li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Fira Sans', sans-serif;
+    letter-spacing: 0.3em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav  li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav  li:hover {
     color: black;
+}
+
+nav  li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav  li span:nth-child(1) {
+    --n: 1;
+}
+
+nav  li span:nth-child(2) {
+    --n: 2;
+}
+
+nav  li span:nth-child(3) {
+    --n: 3;
+}
+
+nav  li span:nth-child(4) {
+    --n: 4;
 }
 .main{
     /* background-color: yellow; */
@@ -134,6 +210,7 @@
 }
 .blogcontainer{
     margin:88px 100px;
+    font-size: 2.5em;
 }
 h1{
     font-family: 'Fira Sans', sans-serif;
@@ -144,6 +221,7 @@ p{
 }
 .intro{
     margin:88px 100px;
+    font-size: 2.5em;
 }
 .intro h2{
     font-family: 'Fira Sans', sans-serif;
@@ -197,9 +275,9 @@ p{
     margin-left: 10px;
 }
 .cross{
-    margin-left: 185px;
+    margin-left: 292px;
     margin-top: 10px;
-    margin-top: 10px;
+    margin-top: 3px;
 }
 @media (max-width: 1011px){
    .devPic{
@@ -213,6 +291,12 @@ p{
    }
    .buttons{
     font-size: 6px;
+   }
+   .intro{
+    font-size: 1em;
+   }
+   .blogcontainer{
+    font-size: 0.75em;
    }
     /* .sidebar{
         transform: translate(-443,0px);
