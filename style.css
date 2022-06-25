@@ -35,27 +35,27 @@ body {
     background-color: black;
 }
 
-nav {
+nav ul{
     list-style-type: none;
     font-size: 30px;
-    padding: 33px 0;
+    padding: 33px 0px;
     
 }
 
-nav  li {
+nav ul li {
     --c: goldenrod;
     color: var(--c);
-    font-size: 16px;
+    font-size: 20px;
     border: 0.3em solid var(--c);
     border-radius: 0.5em;
-    width: 12em;
-    height: 3em;
+    width: 9em;
+    height: 4em;
     text-transform: uppercase;
     font-weight: bold;
     font-family:'Fira Sans', sans-serif;
     letter-spacing: 0.3em;
     text-align: center;
-    line-height: 3em;
+    line-height: 4em;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -63,7 +63,7 @@ nav  li {
     margin: 1em;
 }
 
-nav  li span {
+nav ul li span {
     position: absolute;
     width: 25%;
     height: 100%;
@@ -76,27 +76,27 @@ nav  li span {
     z-index: -1;
 }
 
-nav  li:hover {
+nav ul li:hover {
     color: black;
 }
 
-nav  li:hover span {
+nav ul li:hover span {
     transform: translateY(0) scale(2);
 }
 
-nav  li span:nth-child(1) {
+nav ul li span:nth-child(1) {
     --n: 1;
 }
 
-nav  li span:nth-child(2) {
+nav ul  li span:nth-child(2) {
     --n: 2;
 }
 
-nav  li span:nth-child(3) {
+nav ul li span:nth-child(3) {
     --n: 3;
 }
 
-nav  li span:nth-child(4) {
+nav ul li span:nth-child(4) {
     --n: 4;
 }
 .main{
@@ -166,7 +166,7 @@ nav  li span:nth-child(4) {
     height: 58vh;
 }
 .contactform{
-    padding: 0 34px;
+    padding: 0px 34px;
     /* padding-top: 144px; */
     font-family: 'Fira Sans', sans-serif;
     margin: 88px 100px;
@@ -210,7 +210,7 @@ nav  li span:nth-child(4) {
 }
 .blogcontainer{
     margin:88px 100px;
-    font-size: 2.5em;
+    font-size: 28px;
 }
 h1{
     font-family: 'Fira Sans', sans-serif;
@@ -297,6 +297,7 @@ p{
    }
    .blogcontainer{
     font-size: 0.75em;
+    
    }
     /* .sidebar{
         transform: translate(-443,0px);
