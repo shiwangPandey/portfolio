@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0; 
+}
+.heading{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 185px;
+}
+h3{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.another{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 1em;
+}
+.container{
+    background-image: url(https://th.bing.com/th/id/OIP.5E7D_eUkTqWeNe8x8n_RogHaDa?pid=ImgDet&rs=1);
+    background-position: center center;
+  /* transform: translateZ(-1px) scale(1.5); */
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  height: 120vh;
+  position: relative;
+  top: -187px;
+}

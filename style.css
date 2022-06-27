@@ -4,9 +4,12 @@
     margin:0;
     padding: 0; 
 }
-body {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  }
+.main{
+     
+    background-image: url("https://images.pexels.com/photos/593322/pexels-photo-593322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      
+}
+
 .sidebar{
     position: absolute;
     background-color: rgb(31, 171, 167);
@@ -32,7 +35,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    
 }
 
 nav ul{
@@ -117,7 +120,7 @@ nav ul li span:nth-child(4) {
 
 }
 .devInfo{
-    font-size: 16px;
+    font-size: 10px;
     display: flex;
     justify-content : center;
     flex-direction: column;
@@ -167,9 +170,9 @@ nav ul li span:nth-child(4) {
 }
 .contactform{
     padding: 0px 34px;
-    /* padding-top: 144px; */
-    font-family: 'Fira Sans', sans-serif;
-    margin: 88px 100px;
+    padding-top: 144px;
+     font-family: 'Fira Sans', sans-serif;
+    margin: 88px 100px; 
 }
 .contactform h1{
     font-family: 'Source Code Pro', monospace;
@@ -299,6 +302,49 @@ p{
     font-size: 0.75em;
     
    }
+   .ham {
+    margin-top: 3px;
+    margin-left: 113px;
+}
+
+element.style {
+    display: inline;
+}
+.cross {
+    margin-left: 292px;
+    
+    margin-top: 3px;
+}
+
+.sidebar {
+    margin: 101px -53px;
+}
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 9em;
+    height: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.3em;
+    text-align: center;
+    line-height: 4em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 17px;
+    left: -90px;
+}
     /* .sidebar{
         transform: translate(-443,0px);
         position: absolute;

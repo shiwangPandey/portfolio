@@ -1,0 +1,269 @@
+    /* Default use:
+@include min-(width,4,240);
+
+  use width calculation
+@include min-(width,4,240,'calc(100% - 240px)'); */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+html,
+body {
+  background-color: 9dbdc4;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+}
+.p1{
+  font-family: 'Akaya Telivigala', cursive;
+    font-size: 43px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(8, 68, 117);
+}
+
+section {
+  background-size: cover;
+  color: white;
+  background-color: var(--bg, --color-black);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.image {
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  height: 100vh;
+}
+
+section.text {
+  height: 84vh;
+  font-family: 'Akaya Telivigala', cursive;
+}
+section.heading {
+  z-index: -1;
+  transform: translateY(-30vh) translateZ(1px) scale(1.5);
+}
+
+/* .footer {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .footer h3 {
+  font-weight: normal;
+  color: var(--color-blue);
+} */
+.skillcontainer{
+  padding: 12px;
+
+}
+.skillitem {
+  display: flex;
+  align-items: center;
+  font-size: 42px;
+}
+.skill{
+  width: 23px;
+  height: 6px;
+  background-color: red;
+  border: 2px solid black;
+  font-weight: 900;
+}
+.hundred {
+  width: 355px;
+  height: 10px;
+}
+.seventyfive{
+  width: 266.25px;
+  background-color: blueviolet;
+  height: 10px;
+}
+.fifty{
+  width: 177.5px;
+  background-color: aqua;
+  height: 10px;
+}
+.t5{
+  width: 88.75px;
+  background-color: yellow;
+  height: 10px;
+}
+i{
+  font-size: 19px;
+}
+.devInfo{
+  font-size: 11px;
+  display: flex;
+  justify-content : center;
+  flex-direction: column;
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  
+  left: -129px;
+}
+.hello{
+  font-size: 3em;
+}
+
+.name{
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.about{
+  font-size: 2.5em;
+}
+
+.moreabout{
+  font-size: 2em;
+  margin-top: 23px;
+  font-family: 'Source Code Pro', monospace;
+}
+.buttons{
+  margin-top: 2.2em;
+  font-size: 16px;
+}
+.btn{
+  padding:9px 14px;
+  border-radius:22px ;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 23px;
+}
+
+.btn:hover{
+  background-color:white;
+  color: dodgerblue;
+}
+.devPic img{
+  position: relative;
+    left: 247px;
+    top: -238px;
+    width: 241px;
+    height: 235px;
+}
+.contactform{
+  padding: 0px 34px;
+  padding-top: 144px;
+   font-family: 'Fira Sans', sans-serif;
+  margin: 88px 100px; 
+}
+.contactform h1{
+  font-family: 'Source Code Pro', monospace;
+
+  /* padding: 12px 0; */
+}
+.contactform form div{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact_heading{
+  font-size: 22px;
+  position: relative;
+    top: -85px;
+}
+
+.contactform form div input{
+ /* width: 26vw ; */
+ border-radius: 5px;
+ margin: 6px 0 0 0;
+  padding: 3px;
+
+}
+.contactform form div input{
+ animation-duration: 0 40px;
+}
+.emailHelp {
+  font-size: 22px;
+  color: 5effe1;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+}
+
+#form-check{
+  flex-direction: row;
+}
+#form-check-input{
+  width: 24px;
+  margin: 3px 0;
+  font-size: 10px;
+}
+.form1{
+  font-size: 27px;
+}
+.contactform form div input {
+  
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+h1{
+  font-family: 'Nosifer', cursive;
+  background-color: black;
+}
+.name{
+  font-family: 'Nosifer', cursive;
+  background-color: black;
+}
+
+footer {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.font-weight-bold {
+  font-weight: 700!important;
+}
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+
+user agent stylesheet
+h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.text-center {
+  text-align: center!important;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+.icon{
+  padding: 7px;
+  width: 50px;
+
+  cursor: pointer; 
+}
